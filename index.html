@@ -27,8 +27,12 @@
       <div class="container container-nav">
         <nav class="main-nav">
           <a class="logo" href="./index.html"
-            >Web<span class="logo-s">Studio</span></a
-          >
+            >Web<span class="logo-s">Studio</span>
+          </a>
+          <button class="hero-btn-open" type="button">
+            <svg class="hero-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu">
+            </use></svg>
           <ul class="nav-list">
             <li class="nav-link">
               <a href="./index.html" class="nav-ref current">Studio</a>
@@ -41,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contact-info">
+         <address class="contact-info">
           <ul class="ull contact-list">
             <li>
               <a href="mailto:info@devstudio.com" class="contact tran"
@@ -57,6 +61,72 @@
         </address>
       </div>
     </header>
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close">
+          <svg class="svg-btn-mod" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <li class="mobile-nav-link">
+              <a href="./index.html" class="mobile-nav-ref current">Studio</a>
+            </li>
+            <li class="mobile-nav-link">
+              <a href="" class="mobile-nav-ref">Portfolio</a>
+            </li>
+            <li class="mobile-nav-link">
+              <a href="" class="mobile-nav-ref">Contacts</a>
+            </li>
+          </nav>
+        <address>
+          <ul class="ull mobile-contact-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-menu-contact tran"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="mobile-menu-contact tran"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-icon">
+          <li class="icon-li-foot">
+              <a href="icon-foot" class="href-foot-soc"
+                ><svg class="svg-icon-f" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-li-foot">
+              <a href="icon-foot" class="href-foot-soc"
+                ><svg class="svg-icon-f" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-li-foot">
+              <a href="icon-foot" class="href-foot-soc"
+                ><svg class="svg-icon-f" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-li-foot">
+              <a href="icon-foot" class="href-foot-soc"
+                ><svg class="svg-icon-f" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
 
     <main>
       <section class="hero-section">
@@ -321,6 +391,7 @@
                   alt="Mobile banking app interface showing account balance and transactions"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -341,6 +412,7 @@
                   alt="Illustration of a cashless payment method with a smartphone and card reader"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -361,6 +433,7 @@
                   alt="Laptop and smartphone displaying a meditation app interface"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -381,6 +454,7 @@
                   alt="Taxi cab driving through a city street, representing a taxi service"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -401,6 +475,7 @@
                   alt="Smartphone displaying wallpaper with four additional wallpaper options shown beside it"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -421,6 +496,7 @@
                   alt="Woman in an orange sweater smiling at her smartphone while outdoors, engaging in online courses"
                   width="288"
                   height="280"
+                  class="img-port-tab"
                 />
                 <p class="portfolio-slide-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -586,9 +662,10 @@
                   <use href="./images/icons.svg#icon-active"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <span>I accept the terms and conditions of the
 
               <a href="" class="ref-privacy-mod">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="form-btn-send">Send</button>
