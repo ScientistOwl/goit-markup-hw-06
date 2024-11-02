@@ -176,7 +176,6 @@ li {
   margin: 0 auto;
   /* max-width: 1440px; */
   max-width: 320px;
-  max-height: 432px;
 }
 .hero-title {
   /* font-weight: 700;
@@ -258,9 +257,6 @@ li {
 .feature-subtitle {
   margin-bottom: 8px;
 }
-.li-feature {
-  /* width: calc((100% - 3 * 24px) / 4); */
-}
 .feature-sect {
   padding: 96px 0;
 }
@@ -273,6 +269,7 @@ li {
   border-radius: 4px;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
+  display: none;
 }
 .team {
   padding: 120px 0;
@@ -283,7 +280,6 @@ li {
   justify-content: center;
   align-items: center;
   padding-bottom: 120px;
-  /* gap: 24px; */
   gap: 72px;
   flex-wrap: wrap;
 }
@@ -879,12 +875,32 @@ a {
   .contact-info {
     display: block;
   }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .black {
+    color: #2e2f42;
+  }
+  .contact-list,
+  .contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   .contact-list {
-    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #434455;
+    gap: 12px;
   }
   .hero-section {
-    width: 768px;
-    height: 436px;
+    max-width: 768px;
   }
   .hero-section {
     background-image: linear-gradient(
@@ -901,6 +917,23 @@ a {
         ),
         url(../images/Dark-bg-tablet-x2.jpg);
     }
+  }
+  .hero-title {
+    margin-right: 136px;
+    margin-left: 136px;
+    margin-top: 112px;
+    width: 496px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-button {
+    margin-top: 36px;
+    margin-bottom: 112px;
   }
   .li-feature {
     width: calc((100% - 3 * 24px) / 2);
@@ -930,6 +963,34 @@ a {
     width: 356px;
     height: 300px;
   }
+  .container-f-lt {
+    width: 264px;
+    height: 112px;
+    margin-left: 108px;
+  }
+  .logo-f {
+    padding-right: 150px;
+  }
+  .container-f {
+    width: 208px;
+    height: 80px;
+    margin-left: 24px;
+    margin-bottom: 104px;
+  }
+  .soc-foot {
+    margin-right: 110px;
+  }
+  .form-sub-foot {
+    display: flex;
+    gap: 24px;
+  }
+  .sub-text {
+    margin-right: 410px;
+  }
+  .container-sub-foot {
+    margin-left: 108px;
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1158px) {
   .mobile-menu {
@@ -944,6 +1005,7 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-pc-x1.jpg);
+    max-width: 1440px;
   }
   @media screen and (min-resolution: 192dpi) {
     .hero-section {
@@ -953,5 +1015,106 @@ a {
         ),
         url(../images/Dark-bg-pc-x2.jpg);
     }
+  }
+  .container {
+    max-width: 1440px;
+  }
+  .container-nav {
+    width: 1440px;
+    height: 72px;
+    margin: auto;
+  }
+  .contact-info {
+    font-style: normal;
+    margin: auto;
+  }
+  .contact-list {
+    gap: 40px;
+    flex-direction: row;
+    margin-left: 332px;
+  }
+  .hero-title {
+    margin-right: 472px;
+    margin-left: 472px;
+    margin-top: 112px;
+    width: 496px;
+    height: 120px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-button {
+    margin-top: 48px;
+    margin-bottom: 112px;
+    margin-left: 635px;
+    margin-right: 636px;
+  }
+  .feature-sect {
+    padding: 120px 0;
+  }
+  .li-feature {
+    width: calc((100% - 3 * 24px) / 4);
+    align-items: center;
+  }
+  .feature-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+  .feature-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .feature-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .ul-feature {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .card-team {
+    gap: 24px;
+  }
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
+    width: 360px;
+    height: 300px;
+    gap: 24px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  .img-port-tab {
+    width: 360px;
+    height: 300px;
+  }
+  .container-f-lt {
+    margin: auto;
+    margin-right: 120px;
+    padding-bottom: 120px;
+  }
+  .container-sub-foot {
+    margin: auto;
+    margin-left: 80px;
+    padding-bottom: 80px;
+  }
+  .container-f {
+    margin: auto;
+    padding-bottom: 120px;
   }
 }
