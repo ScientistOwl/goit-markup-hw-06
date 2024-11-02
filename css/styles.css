@@ -991,6 +991,10 @@ a {
     margin-left: 108px;
     margin-bottom: 0;
   }
+  .mod-window {
+    width: 408px;
+    height: 584px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .mobile-menu {
@@ -1005,7 +1009,7 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-pc-x1.jpg);
-    max-width: 1440px;
+    max-width: 100%;
   }
   @media screen and (min-resolution: 192dpi) {
     .hero-section {
@@ -1018,9 +1022,10 @@ a {
   }
   .container {
     max-width: 1440px;
+    margin: 0 auto;
   }
   .container-nav {
-    width: 1440px;
+    width: 100%;
     height: 72px;
     margin: auto;
   }
@@ -1033,6 +1038,9 @@ a {
     flex-direction: row;
     margin-left: 332px;
   }
+  .hero-section {
+    width: 100%;
+  }
   .hero-title {
     margin-right: 472px;
     margin-left: 472px;
@@ -1044,6 +1052,7 @@ a {
     line-height: 107%;
     letter-spacing: 0.02em;
     text-align: center;
+    align-items: center;
     color: #fff;
   }
   .hero-button {
@@ -1105,7 +1114,7 @@ a {
   }
   .container-f-lt {
     margin: auto;
-    margin-right: 120px;
+    margin-right: 0;
     padding-bottom: 120px;
   }
   .container-sub-foot {
@@ -1116,5 +1125,9 @@ a {
   .container-f {
     margin: auto;
     padding-bottom: 120px;
+  }
+  .mod-window {
+    width: 408px;
+    height: 584px;
   }
 }
