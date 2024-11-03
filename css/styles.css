@@ -1176,10 +1176,15 @@ a {
     margin: auto;
     margin-left: 80px;
     padding-bottom: 80px;
+    padding-top: 55px;
   }
   .container-f {
+    width: 208px;
+    height: 80px;
     margin: auto;
-    padding-bottom: 120px;
+    margin-left: 90px;
+    padding-bottom: 104px;
+    padding-top: 0;
   }
   .mod-window {
     width: 408px;
