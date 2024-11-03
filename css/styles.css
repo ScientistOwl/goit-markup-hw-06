@@ -1004,8 +1004,10 @@ a {
   .container-f {
     width: 208px;
     height: 80px;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: auto;
+    margin-left: 24px;
+    padding-bottom: 104px;
+    padding-top: 0;
   }
   .soc-foot {
     margin-right: 110px;
