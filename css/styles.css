@@ -301,7 +301,6 @@ li {
   text-align: center;
   color: #2e2f42;
   display: block;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-member {
@@ -542,7 +541,6 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
-  margin-top: 72px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -591,6 +589,7 @@ a {
   fill: #ffffff;
 }
 .container-sub-foot {
+  margin-top: 72px;
 }
 .container-mod-window {
   position: fixed;
@@ -825,6 +824,7 @@ a {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
 }
 .mobile-contact-list {
   display: flex;
@@ -846,7 +846,13 @@ a {
 .contact-info {
   display: none;
 }
-
+.mobile-nav-ref-black {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 @media screen and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
@@ -903,6 +909,11 @@ a {
     max-width: 100%;
   }
   .hero-section {
+    padding-right: 136px;
+    padding-left: 136px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    align-items: center;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -919,9 +930,6 @@ a {
     }
   }
   .hero-title {
-    margin-right: 136px;
-    margin-left: 136px;
-    margin-top: 112px;
     width: 496px;
     height: 120px;
     font-weight: 700;
@@ -930,13 +938,35 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto 48px auto;
   }
   .hero-button {
-    margin-top: 36px;
-    margin-bottom: 112px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    background: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .li-feature {
-    width: calc((100% - 3 * 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .feature-subtitle {
     text-align: left;
@@ -966,7 +996,7 @@ a {
   .container-f-lt {
     width: 264px;
     height: 112px;
-    margin-left: 108px;
+    margin-left: 0;
   }
   .logo-f {
     padding-right: 150px;
@@ -974,8 +1004,8 @@ a {
   .container-f {
     width: 208px;
     height: 80px;
-    margin-left: 24px;
-    margin-bottom: 104px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   .soc-foot {
     margin-right: 110px;
@@ -988,12 +1018,19 @@ a {
     margin-right: 410px;
   }
   .container-sub-foot {
-    margin-left: 108px;
+    margin-left: 0;
     margin-bottom: 0;
   }
   .mod-window {
     width: 408px;
     height: 584px;
+  }
+  .ul-feature {
+    gap: 72px 24px;
+  }
+  .card-team {
+    gap: 72px 24px;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1010,6 +1047,12 @@ a {
       ),
       url(../images/Dark-bg-pc-x1.jpg);
     max-width: 100%;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: auto;
+    padding-right: auto;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (min-resolution: 192dpi) {
     .hero-section {
@@ -1021,8 +1064,10 @@ a {
     }
   }
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .container-nav {
     width: 100%;
@@ -1042,24 +1087,32 @@ a {
     width: 100%;
   }
   .hero-title {
-    margin-right: 472px;
-    margin-left: 472px;
-    margin-top: 112px;
-    width: 496px;
-    height: 120px;
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
     letter-spacing: 0.02em;
     text-align: center;
-    align-items: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto 48px auto;
   }
   .hero-button {
-    margin-top: 48px;
-    margin-bottom: 112px;
-    margin-left: 635px;
-    margin-right: 636px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    background: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .feature-sect {
     padding: 120px 0;
